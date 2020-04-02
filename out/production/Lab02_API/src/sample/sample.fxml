@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <HBox prefHeight="20.0" prefWidth="200.0" GridPane.rowIndex="1">
+         <children>
+            <ChoiceBox fx:id="choiceBox" value="EN" GridPane.rowIndex="2">
+               <String fx:value="PL" />
+               <String fx:value="EN" />
+            </ChoiceBox>
+            <Button fx:id="ok" mnemonicParsing="false" onAction="#handleLanguageChange" text="Ok" />
+         </children>
+      </HBox>
+
+      <VBox GridPane.rowIndex="3">
+         <children>
+            <Label fx:id="startDataLabel" text="Start date:(DD/MM/YYYY)" />
+            <DatePicker fx:id="startDatePick" />
+         </children>
+      </VBox>
+      <VBox GridPane.rowIndex="4">
+         <children>
+            <Label fx:id="endDataLabel" text="End date:(DD/MM/YYYY)" />
+            <DatePicker fx:id="endDatePick" />
+         </children>
+      </VBox>
+      <HBox spacing="5.0" GridPane.rowIndex="5">
+         <children>
+            <Button fx:id="generateInfo" mnemonicParsing="false" onAction="#handleAction" text="Generate info" />
+         </children>
+      </HBox>
+      <Label fx:id="asteroidsCount" text="Asteroids count info" GridPane.rowIndex="6" />
+      <Label fx:id="languageLabel" text="Language/Jezyk:" />
+   </children>
+</GridPane>

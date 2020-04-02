@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Lab02_API.jnlp">
+  <information>
+    <title>Lab02_API</title>
+    <vendor>Unknown</vendor>
+    <description>Lab02_API</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Lab02_API.jar" size="19512" download="eager" />
+    <jar href="java-json.jar" size="84697" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="600" height="400" main-class="sample.Main"  name="Lab02_API" />
+  <update check="background"/>
+</jnlp>
