@@ -3,4 +3,4 @@ Aplikacja umożliwia sprawdzenie, ile w danym czasie(w maksymalnym odstępie 7 d
 https://api.nasa.gov/
 Aplikacja zawiera polską oraz angielską wersję językową.
 
-W gałęzi sources znajdują się pliki wykonywalne.
+W folderze sources znajdują się pliki wykonywalne.
